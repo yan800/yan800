@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let T1,T2,T3,T4 
+ var num
+ var p=1
+ var i=1
+ function factoriel(num){
+      while (i<=num){
+     p=p*i
+    i++
+}
+return p;
+}
+T1=new Date().getTime()
+console.log(factoriel(10000))
+            T2=new Date().getTime()  
+
+ 
+ var num
+p=1
+ function fact(num){if (num==1)return 1 
+     return (num*fact(num-1))
+}
+T3=new Date().getTime()
+ console.log (fact(100000))
+T4=new Date().getTime()
+
+
+ console.log("la boucle tant que a pris " +(T2-T1)+" et la fonction recursive a pris " + (T4-T3))
+    </script>
+</body>
+</html>
